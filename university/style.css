@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}   
+.custom-navtabs{
+    background: #fff;
+    box-shadow: 0 0 8px #999;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.carousel_exam img{
+    height: 640px;
+
+}
+.course-offer .card {
+    box-shadow: 0 5px 10px 0px rgb(82, 132, 33);
+    margin: 10px 20px;
+    /* background-image: linear-gradient(45deg ,green 10%,gray 10%,blue); */
+ }
+ .card:hover{
+    box-shadow: 0 2px 8px 0px crimson;
+}
+ #myTab li .active{
+    box-shadow: 0 2px 8px 0px rgb(82, 132, 33);
+   border-radius: 15px;
+   background-color:yellowgreen;
+ }
+ #myTab li a {
+    /* box-shadow: 0 2px 8px 0px rgb(68, 33, 132);
+    border-radius: 15px; */
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+ }
+ footer li{
+     list-style: none;
+
+
+ }
+ footer a{
+     color: white;
+     text-decoration: none;
+ }
+ .testimonial img{
+     width:100px;
+     height: 200px;
+ }
+ .star img{
+    width:auto;
+    height: 200px;
+ }
+  
+ .owl_custom-testi .owl-nav button.owl-prev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-weight: 700;
+    width: 100px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 30px !important;
+    color: #000 !important;
+    font-size:4rem !important;
+    cursor: pointer;
+    z-index: 5;
+    transform: translate(-70%, -50%);
+  }
+    
+  .owl_custom-testi .owl-nav button.owl-next {
+    
+    position: absolute;
+    top: 50%;
+    font-weight: 700;
+    width: 100px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 30px !important;
+    color: #000 !important;
+    font-size:4rem !important;
+    cursor: pointer;
+    z-index: 5;
+    transform: translate(70%, -50%);
+    right: 0;
+    }

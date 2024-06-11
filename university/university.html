@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"  />
+
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+   
+</head>
+<body>
+     <section class="new_nav ">
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#">University</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2  text-center mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#course">Course</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#facilities">Facilities</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#testimonial">Testimonial</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                  </li>
+                </ul>
+                
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+                <button type="button" class="btn btn-outline-success shadow-none ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Login
+                </button>
+              </div>
+            </div>
+          </nav>
+     </section>
+
+
+     <!-- Modal -->
+     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            
+            <div class="row g-3 mb-5">
+              <div class="col-12">
+                <input type="email" class="form-control shadow-none" id="floatingInput" placeholder="Email">
+              </div>
+              <div class="col-12">
+                <input type="password" class="form-control shadow-none" id="floatingPassword" placeholder="Password">
+              </div>
+            </div>
+
+            <div class="text-center">
+              <input type="button" value="Submit" class="btn-outline-success btn">
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+
+     <!------------------------------crousel------------------------------------->
+     <section class="carousel_exam mt-0" id="home">
+     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images1/cambridge.jpg" class="d-block w-100 " alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fw-bold">World's Biggest University</h5>
+              <p> "I would found an institution where any person can find instruction in study".</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images1/328-3285522_university-of-sydney.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fw-bold">To seek Truth is Knowledge</h5>
+              <p>"I would found an institution where any person can find instruction in study"</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images1/images.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fw-bold"> Freedom and Equality Peace and Open-mindedness.</h5>
+              <p>"I would found an institution where any person can find instruction in study".</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+   
+
+
+
+<section class="course-offer bg-white mb-4 mt-3" id="course">
+    <div class="container ">
+      <div class="text-center">
+        <h1 data-aos="fade-up" data-aos-offset="200">Course we <span class="text-info">offer</span></h1>
+        
+      <hr class="w-25 m-auto mb-2">
+      </div>
+     
+        
+             
+              <div class="row   ">
+                <div class="col-md-6 col-sm-12 col-lg-6 col-12 m-auto my-4" data-aos="zoom-in" data-aos-offset="200">
+                  <div class="card ">
+                     <div class="card-body">
+                      <h5 class="card-title text-center">Intermediate</h5>
+                      <p class="card-text  ">Lorem ipsm dolor sit amet, consection adipiscing elit.
+                        pellentesque aliquet turpis nulla, aleifend faucibusn est sollicitudin ut.
+                        Maecenas ut venenat ex, et dapibus purus donec sit. </p>
+                      <div class="text-center">
+                      <a href="#" class="btn btn-dark ">Go somewhere</a>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-6 col-12  m-auto my-4" data-aos="zoom-in" data-aos-offset="200">
+                  <div class="card">
+                     <div class="card-body">
+                      <h5 class="card-title text-center">Degree</h5>
+                      <p class="card-text  ">Lorem ipsm dolor sit amet, consection adipiscing elit.
+                        pellentesque aliquet turpis nulla, aleifend faucibusn est sollicitudin ut.
+                        Maecenas ut venenat ex, et dapibus purus donec sit. </p>
+                     <div class="text-center">
+                      <a href="#" class="btn btn-dark ">Go somewhere</a>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+              
+        
+        
+              <div class="row ">
+                <div class="col-md-6 col-sm-12 col-lg-6 col-12  mb-4 " data-aos="zoom-in" data-aos-offset="200">
+                  <div class="card ">
+        
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Post graduate</h5>
+                      
+                      <p class="card-text  ">Lorem ipsm dolor sit amet, consection adipiscing elit.
+                        pellentesque aliquet turpis nulla, aleifend faucibusn est sollicitudin ut.
+                        Maecenas ut venenat ex, et dapibus purus donec sit. </p>
+                      <div class="text-center">
+                      <a href="#" class="btn btn-dark">Go somewhere</a>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-6 col-12" data-aos="zoom-in" data-aos-offset="200">
+                  <div class="card ">
+                    <div class="card-body ">
+                      <h5 class="card-title text-center">IT</h5>
+                      <p class="card-text  ">Lorem ipsm dolor sit amet, consection adipiscing elit.
+                        pellentesque aliquet turpis nulla, aleifend faucibusn est sollicitudin ut.
+                        Maecenas ut venenat ex, et dapibus purus donec sit. </p>
+                      <div class="text-center">
+                      <a href="#" class="btn btn-dark">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 
+              </div>
+            
+        
+        
+        
+        
+        
+  
+    </div>
+  
+  
+  
+  </section>
+
+  <!--------------------------Facilities----------------->
+  <section class="contact_us" id="facilities">
+      <div class="container">
+        <div class="text-center">
+            <h1  data-aos="fade-up" data-aos-offset="200">Our <span class="text-info">Facilities</span></h1>
+            
+          <hr class="w-25 m-auto mb-2">
+          </div>
+          <div class="row ">
+            <div class="col-3 mt-5 mb-3">
+                <ul class="nav nav-pills custom-navtabs flex-column  " id="myTab">
+                    <li class="nav-item p-2 "><a class="nav-link active" data-bs-toggle="pill" href="#home">World Class Libarary</a></li>
+                    <li class="nav-item p-2"><a class="nav-link " data-bs-toggle="pill" href="#profile">Largest Play Ground</a></li>
+                    <li class="nav-item p-2"><a class="nav-link " data-bs-toggle="pill" href="#contact">Tasty Healthy Food</a></li>
+                </ul>
+
+            </div>
+            <div class="col-9  mt-5 mb-3">
+                <div class="tab-content py-3" id="mytabcontent">
+                    <div class="tab-pane fade show active" id="home">
+                        It is the central reference and research library for state government and the Legislature. It provides non-partisan research to the Legislature and the Governor. It collects, preserves, generates and disseminates information
+                         ranging from California's priceless historical items to today's online texts.
+                         It is the central reference and research library for state government and the Legislature. It provides non-partisan research to the Legislature and the Governor. It collects, preserves, generates and disseminates information
+                         ranging from California's priceless historical items to today's online texts.
+
+                    </div>
+                    <div class="tab-pane fade " id="profile">
+                      Contact your local Play Consultant, and let's start dreaming up your playground today! Sav
+                      e Today! Cash with order required. Save 40% when using other forms of payment.
+                      It is the central reference and research library for state government and the Legislature. It provides non-partisan research to the Legislature and the Governor. It collects, preserves, generates and disseminates information
+                      ranging from California's priceless historical items to today's online texts.
+                     
+                    </div>
+                    <div class="tab-pane fade " id="contact">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam at quia nulla 
+                        perspiciatis esse libero obcaecati nobis asperiores aut doloribus.today! Cash with order required. Save 40% when using other forms of payment.
+                        It is the central reference and research library for state government and the Legislature. It provides non-partisan research to the Legislature and the Governor. It collects, preserves, generates and disseminates information
+                         priceless historical items to today's online texts.
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+                
+
+            </div>
+
+            <div class="row  star ">
+              <div class="col-md-4 col-sm-12 col-lg-4 col-12 m-auto my-4">
+                <div class="card ">
+                  <img src="images1/library.jpg" class="card-img-top" alt="...">
+                   <div class="card-body">
+                    <h5 class="card-title text-center">World Class Libarary</h5>
+                     
+                    <div class="text-center">
+                    <a href="#" class="btn  btn-outline-success ">Go somewhere</a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12 col-lg-4 col-12  m-auto my-4">
+                <div class="card">
+                  <img src="images1/SportsFac1.jpg" class="card-img-top" alt="...">
+                   <div class="card-body">
+                    <h5 class="card-title text-center">Largest Play Ground</h5>
+                  
+                   <div class="text-center">
+                    <a href="#" class="btn btn-outline-success ">Go somewhere</a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12 col-lg-4 col-12  m-auto my-4">
+                <div class="card">
+                  <img src=" images1/cant.jpg" class="card-img-top" alt="...">
+                   <div class="card-body">
+                    <h5 class="card-title text-center">Tasty And Healthy Food</h5>
+                    
+                   <div class="text-center">
+                    <a href="#" class="btn btn-outline-success ">Go somewhere</a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+            </div>
+  </section>
+
+<!-- -------------------TEstimonials------------------------ -->
+  <section class="testimonial " id="testimonial">
+    <div class="text-center mb-5">
+      <h1  data-aos="fade-up" data-aos-offset="200">Our <span class="text-info">Testimonial</span></h1>
+    <hr class="w-25 m-auto mb-2">
+    </div>
+    <div class="container">
+    <div class="owl-carousel owl-theme owl_custom-testi owl-loaded owl-drag">
+      <div class="item"><img src="images1/graduat3.jpg"></div>
+      <div class="item"><img src="images1/SportsFac1.jpg"></div>
+      <div class="item"><img src="images1/library.jpg"></div>
+      <div class="item"><img src="images1/girls with degree.jpg"></div>
+      <div class="item"><img src="images1/cabin.jpg"></div>
+
+      
+  </div>
+</div>
+
+  </section>
+ <!-------------course----------->
+
+    <section class="contactsec" id="contact">
+        <div class="container  mt-5">
+          <div class="text-center">
+            <h1  data-aos="fade-up" data-aos-offset="200">Contact <span class="text-info">us</span></h1>
+          <hr class="w-25 m-auto mb-2">
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-12 col-lg-6 col-12 mt-3" data-aos="zoom-in" data-aos-offset="200">
+              <h3>why are join us?</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos disti
+                nctio consequuntur maiores accusantium.</p>
+                <button class="btn btn-outline-success mb-3">Read More</button>
+      
+                <!-- <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div> -->
+                <div class="row g-3 mb-5">
+                  <div class="col">
+                    <input type="text" class="form-control shadow-none" placeholder="First name" aria-label="First name">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control shadow-none" placeholder="Last name" aria-label="Last name">
+                  </div>
+                </div>
+                <div class="row g-3 mb-5">
+                  <div class="col">
+                    <input type="email" class="form-control shadow-none" id="floatingInput" placeholder="Email">
+                  </div>
+                  <div class="col">
+                    <input type="password" class="form-control shadow-none" id="floatingPassword" placeholder="Password">
+                  </div>
+                </div>
+
+                <div class="text-center">
+                  <input type="button" value="Submit" class="btn-outline-success btn">
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-lg-6 col-12">
+              <div class='offis mt-5' data-aos="fade-right" data-aos-offset="200">
+              <img src="images1/cabin.jpg" class=" imag-fluid   ms-3 mt-4 mb-3" alt="...">
+            </div>
+      
+            </div>
+      
+      
+          </div>
+      
+        </div>
+      
+      
+      
+      </section>
+
+    
+     
+
+  <footer class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 ">
+          <div class="m-3">
+            <h4 class="text-info"  >about-us</h4>
+
+            <p class="text-light ">Lorem ipsum dolor sit amet consectetur, adi
+              
+              pisicing elit. Soluta unde, ratione nisi cumque, numqua
+              m pariatur fugiat, consectetur tenetur ad corrupti accusantiu
+              m fuga veniam nihil doloribus quia vel facilis inventore repudia
+              ndae dolorem nesciunt. Deserunt repellendus quo tempora debitis consequatur et. Similique vel modi praesentium id a. Voluptates sed doloremque commodi inventore.</p>
+           
+          </div>
+
+         
+
+        </div>
+        <div class="col-md-3 ">
+          <div class="m-3">
+            <h5 class="text-info">contact-us</h5>
+            <p class="text-light">
+              Address :<br>
+Madhuban Colony, Devpuri, Meerut, Uttar Pradesh 250002<br>
+Phone:<br>
+<i class="fa-solid fa-phone-volume"></i>+91-9760******<br>
+<i class="fa-solid fa-phone-volume"></i>+91-9760******<br>
+<i class="fa-solid fa-envelope"></i>
+abc@gmail.com
+            </p>
+
+            
+          </div>
+        </div>
+        <div class="col-md-2 ">
+          <div class="m-3">
+            <h5 class="text-info">courses</h5>
+            <ul class="">
+              <li class=""><a href="">IIT JEE</a></li>
+              <li><a href=""> PHP</a></li>
+              <li><a href="">CLOUD COUMPUTING</a></li>
+              <li><a href="">DATASCIENCE</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2 ">
+          <div class="m-3">
+            <h5 class="text-info">Links</h5>
+             
+              <div class="icons text-info">
+                <i class="fa-brands fa-facebook text-info"></i>
+                <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <p>MADE BY ME</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="w-25  m-auto  text-light ">
+    
+  </footer>
+
+   
+
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+    <script>
+    
+    </script>
+
+    <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      dots:false,
+    responsiveClass: true,
+    autoplayTimeout: 4000,
+    smartSpeed: 400,
+    nav: true,
+    margin:10,
+    autoplay : true,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:2
+          },
+          1000:{
+              items:3
+          }
+      }
+  });
+
+</script>
+    
+</body>
+</html>
